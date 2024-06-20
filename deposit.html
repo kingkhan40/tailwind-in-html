@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="./src/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-fluid">
+   
+    <div class="flex text-center mx-auto">
+
+        <h2 class="text-2xl text-white flex mx-auto text-center justify-center font-bold my-10">Deposit</h2>
+    </div>
+
+    <div>
+        <section class="mt-4">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-7xl p-4 max-sm:mr-0">
+                <div class="flex gap-2">
+                    <a href="index.html" class="bg-slate-100 px-8 rounded-full py-1">
+                        <i class="fas fa-arrow-left text-black"></i>
+                    </a>
+                </div>
+            </div>
+      <div class="container my-4">
+       
+          <div class="card">
+            <div class="bg-cover bg-fixed bg-center"
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRia4hpFS2aMpzZmup9dZA-K6MJBmGP5shC3w&s'); height: auto">
+            <div class="card-header ">
+              <!-- Credit card form tabs -->
+              <ul class="flex flex-wrap items-center justify-between max-sm:justify-center">
+              
+                <li>
+                  <a href="#credit-card" class="payment-tab active" data-tab="credit-card"><i
+                      class="fas fa-credit-card"></i> Deposit</a>
+                </li>
+                <li>
+                  <a href="#paypal" class="payment-tab" data-tab="paypal"><i class="fab fa-paypal"></i> History</a>
+                </li>
+               
+              </ul>
+            </div>
+            <!-- End card-header -->
+            <div class="card-content">
+              <!-- Credit card info -->
+              <div id="credit-card" class="tab-pane active payment-form">
+               
+                <form>
+                  <div class="max-w-7xl mx-auto shadow-lg rounded-lg bg-cover bg-fixed bg-center"
+                  style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBFI2TO6OdXrirtL4KOg56xQ9gM2WRQdedyA&s'); height: auto">
+                    <div class="px-6 py-5">
+                      <div class="flex flex-wrap items-start gap-3">
+                        <!-- Icon -->
+                      
+                        <!-- Card content -->
+                        <div class="flex-grow truncate">
+                          <!-- Card header -->
+                          <div class="w-full flex flex-wrap sm:flex justify-between items-center mb-3 overflow-x-auto">
+                            <!-- Title -->
+                            <h2 class="text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0">Account Amount</h2>
+                            <!-- Like and comment buttons -->
+                          
+                          </div>
+                          <!-- Card body -->
+                          <div class="flex items-end justify-between whitespace-normal">
+                            <!-- Paragraph -->
+                            <div class="max-w-md text-indigo-100">
+                              <p class="mb-2 text-3xl font-bold">454.15 USDT</p>
+                            </div>
+                            
+                            <!-- More link -->
+
+
+                          </div>
+                          <!-- Card footer -->
+                        
+                        </div>
+                      </div>
+                     
+
+                    </div>
+                    <div class="my-4">
+                        <button class="w-full p-3 rounded-lg bg-blue-500 text-white text-lg font-bold">Withdraw</button>
+                     </div>
+                  </div>
+
+                </form>
+              </div>
+              <!-- Paypal info -->
+              <div id="paypal" class="tab-pane payment-form">
+              
+                <form>
+                  <div class="max-w-7xl mx-auto shadow-lg rounded-lg bg-cover bg-fixed bg-center"
+                  style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYeDqNF_CRMkBmZocIO7WLf8uAErKAgzTYmQ&s'); height: auto">
+                    <div class="px-6 py-5">
+                      <div class="flex flex-wrap items-start gap-3">
+                     
+                        <div class="flex-grow truncate">
+                          <!-- Card header -->
+                          <div class="w-full flex flex-wrap sm:flex justify-between items-center mb-3 overflow-x-auto">
+                            <!-- Title -->
+                            <h2 class="text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0">202405105697352954869227520</h2>
+                            <!-- Like and comment buttons -->
+                           
+                          </div>
+                        
+                          <div class="flex flex-wrap items-center justify-between my-4 mx-5">
+                            <div>
+                              <a href="#" class="text-indigo-100 font-bold ">2024-05-10 15:22:29</a>
+                             
+                            </div>
+                           
+                            <div>
+                              <button role="link"
+                                class="relative text-white after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-neutral-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100">
+                                +1060
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+             
+          </div>
+        </div>
+        <!-- End card -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".payment-tab").click(function () {
+        // Remove active class from all tabs
+        $(".payment-tab").removeClass("active");
+        // Add active class to the clicked tab
+        $(this).addClass("active");
+
+        // Hide all payment forms
+        $(".payment-form").hide();
+        // Show the corresponding payment form based on the data-tab attribute of the clicked tab
+        var tabId = $(this).attr("data-tab");
+        if (tabId === "all") {
+          $(".payment-form").show();
+        } else {
+          $("#" + tabId).show();
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

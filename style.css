@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+
+background-image: url("data:image/jpeg;base64,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");
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 100vh;
+object-fit: cover;
+
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+}
+
+.card-header ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.card-header ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.card-header ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    border: 1px solid #1a1414;
+    margin-right: 10px;
+    gap: 4px;
+}
+
+
+
+.card-header ul li a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.card-content {
+    padding: 20px;
+}
+.form-group2{
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+.form-group2 input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+.input-group-append{
+    position: absolute;
+    right: -22px;
+    top: 21px;
+}
+
+.input-group-prepend,
+.input-group-text{
+    background-color: #f1eded;
+    border: 1px solid #fffdfd;
+    padding: 10px;
+    overflow: hidden;
+}
+.input-group-text i{
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group input {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-col {
+    flex: 1;
+    padding-right: 15px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group1 input[type="text"],
+.form-group1 input[type="number"],
+.form-group1 select {
+    width: 33%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.form-group button i {
+    margin-right: 5px;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+    padding: 10px;
+}
+
+
+
+.rounded {
+    border-radius: 1rem
+}
+
+.nav-pills .nav-link {
+    color: #555
+}
+
+.nav-pills .nav-link.active {
+    color: white
+}
+
+input[type="radio"] {
+    margin-right: 5px
+}
+
+.bold {
+    font-weight: bold
+}
+.subscribe{
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.subscribe2{
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
